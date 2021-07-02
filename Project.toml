@@ -8,6 +8,7 @@ ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
 Requires = "ae029012-a4dd-5104-9daa-d747884805df"
 
 [compat]
+Requires = "1"
 julia = "1.6"
 
 [extras]
