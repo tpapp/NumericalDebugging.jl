@@ -14,4 +14,6 @@ end
 
 let a = Inf
     @test_logs (:warn, "nonfinite: a") @check_if nonfinite a b = 9
+    NumericalDebugging.ERROR[] = true
+    @test_throws Exception @check_if nonfinite a
 end
