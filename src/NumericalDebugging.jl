@@ -59,7 +59,7 @@ error when [`ERROR`](@ref) is set.
 
 ```jldoctest; filter = r"REPL.*"
 julia> let a = Inf
-           @warn_if nonfinite a b = 9
+           @check_if nonfinite a b = 9
        end
 ┌ Warning: nonfinite: a
 │   a = Inf
